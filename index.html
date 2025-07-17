@@ -1,24 +1,262 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    <title>Voyages</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Voyages</title>
 </head>
+
 <body>
-    
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-bg" role="navigation" aria-label="main navigation">
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="index.html">
+          Accueil
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-item">Par Continent</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Jamaïque <span class="has-text-link"> — Omar</span></a>
+            <a class="navbar-item" href="#">Japon <span class="has-text-link"> — Pierre</span></a>
+            <a class="navbar-item" href="#">Tunisie <span class="has-text-link"> — Mehdi</span></a>
+            <a class="navbar-item" href="russie.html">Russie <span class="has-text-link"> — Harouna</span></a>
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-item">Par Personnes</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="">Omar <span class="has-text-success"> — Jamaïque</span></a>
+            <a class="navbar-item" href="">Pierre <span class="has-text-success"> — Japon</span></a>
+            <a class="navbar-item" href="">Mehdi <span class="has-text-success"> — Tunisie</span></a>
+            <a class="navbar-item" href="">Harouna <span class="has-text-success"> — Russie</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!--hero-->
+  <section class="hero is-medium is-link hero-img">
+    <div class="overlay">
+      <div class="hero-body">
+        <p class="title is-1 mb-5 has-text-centered">Bienvenue sur notre site de voyages</p>
+        <p class="subtitle is-3 has-text-centered">Découvrez notre passion commune pour l'aventure à travers le monde.
+          Nous partageons ici les pays que nous avons explorés ou que nous rêvons de visiter, avec anecdotes, conseils
+          et coups de cœur personnels.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--presentation-->
+  <h2 class=" title is-3 has-text-centered mt-4">A propos de Nous</h2>
+
+  <div class="columns is-mobile is-multiline is-centered mb-5">
+    <div class="column is-narrow">
+      <div class="tile-square">
+        <img src="assets/img/homme.png" alt="Icône " />
+        <p class="has-text-weight-semibold">Harouna</p>
+        <p class="has-text-weight-semibold">Developpeur en formation</p>
+      </div>
+    </div>
+    <div class="column is-narrow">
+      <div class="tile-square">
+        <img src="assets/img/heureux.png" alt="Icône " />
+        <p class="has-text-weight-semibold">Omar</p>
+        <p class="has-text-weight-semibold">Developpeur en formation</p>
+      </div>
+    </div>
+    <div class="column is-narrow">
+      <div class="tile-square">
+        <img src="assets/img/homme(1).png" alt="Icône " />
+        <p class="has-text-weight-semibold">Pierre</p>
+        <p class="has-text-weight-semibold">Developpeur en formation</p>
+      </div>
+    </div>
+    <div class="column is-narrow">
+      <div class="tile-square">
+        <img src="assets/img/noir.png" alt="Icône " />
+        <p class="has-text-weight-semibold">Mehdi</p>
+        <p class="has-text-weight-semibold">Developpeur en formation</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="has-text-centered mb-5">
+    <a href="apropos.html">
+      <button class="button is-info is-medium">Voir plus</button>
+    </a>
+  </div>
+
+
+
+  <!--Card-->
+  <h2 class=" title is-3 has-text-centered mt-4 custom-img-row">Nos Destination</h2>
+  <div class="columns">
+    <!--colone 1-->
+    <div class="column">
+      <div class="card custom-card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="assets/img/jamica.jpg" alt="Placeholder image" />
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Jamaïque</p>
+            </div>
+          </div>
+
+
+          <div class="content">
+            Aller en vacances en Jamaïque, c’est le top !
+            Des plages paradisiaques, un soleil au rendez-vous, et une ambiance détendue unique.
+            Entre reggae, nature luxuriante et saveurs exotiques, tu vas adorer chaque instant.
+            La Jamaïque, c’est l’endroit parfait pour se relaxer, s’amuser, et vivre des moments inoubliables !
+          </div>
+          <a href="">
+            <div class="has-text-centered mt-3">
+              <button class="button is-info is-small">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <!--colone 2-->
+    <div class="column">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="assets/img/japon.jpg" alt="Placeholder image" />
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Japon</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Partir en vacances au Japon, c’est une expérience incroyable !
+            Entre traditions millénaires et technologies futuristes, tout y est fascinant.
+            Des temples paisibles aux villes ultra modernes, sans oublier la délicieuse cuisine japonaise.
+            Le Japon, c’est l’aventure, la culture, et des souvenirs magiques à chaque coin de rue !
+          </div>
+          <a href="">
+            <div class="has-text-centered mt-3">
+              <button class="button is-info is-small">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--colone 3-->
+    <div class="column">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="assets/img/tunisie.webp" alt="Placeholder image" />
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Tunisie</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Partir en vacances en Tunisie, c’est le rêve !
+            Des plages dorées, un climat chaleureux, et une culture riche à découvrir.
+            Entre souks colorés, sites historiques impressionnants, et cuisine savoureuse, tu ne t’ennuieras jamais.
+            La Tunisie, c’est l’endroit parfait pour se détendre et vivre une aventure authentique !
+          </div>
+          <a href="">
+            <div class="has-text-centered mt-3">
+              <button class="button is-info is-small">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--colone 4-->
+    <div class="column">
+      <div class="card custom-card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="assets/img/russie.webp" alt="Placeholder image" />
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Russie</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Partir en vacances en Russie, c’est une aventure unique !
+            Des paysages immenses, des villes pleines d’histoire comme Moscou et Saint-Pétersbourg.
+            Entre palais somptueux, musées fascinants et traditions riches, tu vas être émerveillé.
+            La Russie, c’est le mélange parfait entre culture, mystère et grandeur !
+
+          </div>
+          <a href="russie.html">
+            <div class="has-text-centered mt-3">
+              <button class="button is-info is-small">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="footer has-background-dark has-text-white mt-6">
+    <div class="content has-text-centered">
+      <p>
+        <strong class="has-text-white">Voyages</strong> — Site réalisé par Harouna, Omar, Pierre & Mehdi.<br>
+        2025 - Tous droits réservés.
+      </p>
+      <div class="icons mt-3">
+        <a href="https://facebook.com" class="icon is-medium has-text-white mx-2" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://instagram.com" class="icon is-medium has-text-white mx-2" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com" class="icon is-medium has-text-white mx-2" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="contact.html" class="icon is-medium has-text-white mx-2">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
 
 
 
-
-
-
-
-
-
-
-
-</body>
 </html>
+</body>

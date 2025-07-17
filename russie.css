@@ -1,0 +1,91 @@
+.navbar-bg{
+    background-color: #4A5CD3;
+}
+
+.hero-russe {
+    background: url(assets/img/rhero.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.p  {
+    color: white;
+}
+
+
+.custom-size {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.custom-size img {
+  width: 100%;
+  height: auto;
+}
+
+
+.custom-card {
+  margin: 0 10px; 
+}
+
+.custom-img-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.card {
+  animation: fadeInUp 1s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.icons .fa-facebook {
+  color: #3b5998; 
+}
+
+.icons .fa-instagram {
+  color: #e1306c; 
+}
+
+.icons .fa-twitter {
+  color: #1da1f2; 
+}
+
+.icons .fa-envelope {
+  color: #ffffff; 
+}
+
+
+.box {
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(74, 92, 211, 0.2);
+  background-color: lightblue;
+}
+
+.message.is-info {
+  background-color: #dbe9ff;
+  color: #051132;
+  border-radius: 10px;
+}
+
