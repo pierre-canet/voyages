@@ -340,7 +340,7 @@ nav a {
   nav ul {
     display: flex;
     flex-flow: row wrap;
-    background-color: #efbdeb;
+    background-color: cyan;
   }
   nav ul li {
     position: relative;
@@ -368,7 +368,7 @@ nav a {
   }
   .sous a {
     border-bottom: none;
-    background-color: #efbdeb;
+    background-color: cyan;
   }
   .sous a:hover {
     border-bottom: none;
