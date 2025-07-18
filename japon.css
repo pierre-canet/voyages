@@ -8,6 +8,7 @@
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: #efbdeb;
 }
 
 h1 {
@@ -18,33 +19,234 @@ h1 {
 }
 
 p {
+}
 
+.budget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.boxPubGreat {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 }
 
 /*Affichage Mobile*/
 
-.container {text-align: center;}
+.container {
+  text-align: center;
+}
 
+main {
+  margin-top: 15vw;
+}
 
 .boxText {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vw;
+}
+
+td {
+  text-align: left;
+}
+
+.boxPubMedium {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.boxPub {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 2vw;
+}
+
+.boxPub a {
+  border: solid black 1vw;
+  border-radius: 3vw;
+  padding: 0.5vw;
+  font-size: 5vw;
+  background-color: #4a5cd3;
+  color: black;
+  text-align: center;
+}
+
+/*NavBar*/
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+}
+.conteneur-nav {
+  position: absolute;
+  width: 100%;
+}
+nav input[type="checkbox"] {
+  display: none;
+}
+nav label {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0px;
+  text-align: center;
+  background-color: gold;
+}
+nav ul {
+  display: none;
+  list-style-type: none;
+  background-color: #555;
+}
+nav input[type="checkbox"]:checked + ul {
+  display: flex;
+  flex-flow: column wrap;
+}
+nav ul li {
+  flex: 1 1 auto;
+  text-align: center;
+}
+nav > div > ul > li > a {
+  color: white;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 0px;
+}
+.sous {
+  display: flex;
+  flex-flow: column wrap;
+  z-index: 1000;
+}
+
+.sous li {
+  flex: 1 1 auto;
+  text-align: left;
+}
+.sous a {
+  padding: 10px;
+  background-color: RGBa(200, 200, 200, 0.8);
 }
 
 /*Affichage Desktop*/
 
 @media (min-width: 601px) {
-
-    .boxText {
+  main {
+    margin-top: 0;
+  }
+  .boxText {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: flex-start;
     column-gap: 5px;
     padding: 5px;
-}
+  }
+  .boxText p {
+    max-width: 33%;
+  }
 
-p {max-width: 33%;}
+  .boxPubMedium {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
 
+  .boxPub {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 10px;
+    max-width: 33%;
+    font-size: 15px;
+  }
+
+  .boxPub a {
+    border: solid black 5px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: #4a5cd3;
+    color: black;
+    text-align: center;
+  }
+
+  .boxPub a:hover {
+    font-size: 25px;
+    transition: 0.5s;
+  }
+
+  /*NavBar*/
+  .conteneur-nav {
+    position: static;
+  }
+  nav label,
+  nav input {
+    display: none;
+  }
+  nav input[type="checkbox"]:checked + ul,
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #efbdeb;
+  }
+  nav ul li {
+    position: relative;
+  }
+  nav > div > ul > li > a {
+    color: black;
+  }
+  nav a {
+    border-bottom: 2px solid transparent;
+  }
+  nav a:hover {
+    color: orange;
+    border-bottom: 2px solid gold;
+  }
+  .sous {
+    display: none;
+    box-shadow: 0px 1px 2px #ccc;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+  }
+  nav > div > ul li:hover .sous {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .sous a {
+    border-bottom: none;
+    background-color: #efbdeb;
+  }
+  .sous a:hover {
+    border-bottom: none;
+    background-color: RGBa(200, 200, 200, 0.1);
+  }
+  .deroulant > a::after {
+    content: " ▼";
+    font-size: 12px;
+  }
+
+  .conteneur-contenu {
+    margin: 50px 20px;
+    height: 1500px;
+  }
 }
