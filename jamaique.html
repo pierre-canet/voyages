@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mes Voyages - Jamaïque</title>
+    <link rel="stylesheet" href="jamaique.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenue en Jamaïque 🌴</h1>
+      <h2>
+        Ici, tout respire la liberté : des plages dorées, un rythme reggae, et
+        une nature tropicale foisonnante. La Jamaïque vous accueille avec
+        chaleur, musique et magie.
+      </h2>
+    </header>
+
+    <main>
+      <!-- Section audio avec bouton -->
+      <section class="intro-welcome">
+        <div class="overlay">
+          <button onclick="document.getElementById('ambiance').play()">
+            🎶 Commencer l'aventure
+          </button>
+        </div>
+        <audio id="ambiance" src="Bob Marley - One Love.mp4" loop></audio>
+      </section>
+
+      <!-- Section image d'intro -->
+      <section class="intro-section">
+        <div class="intro-image">
+          <img
+            src="img/belle-plage-tropicale-mer-et-ocean-avec-cocotier-et-parasol-et-chaise-sur-ciel-bleu.jpg"
+            alt="Plage en Jamaïque"
+          />
+        </div>
+        <div class="intro-text">
+          <h2>Évasion au cœur des Caraïbes 🌴</h2>
+          <p>
+            Plages dorées, brise chaude et rythme reggae — la Jamaïque offre une
+            escapade sensorielle entre nature sauvage et culture vibrante.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section lieux incontournables -->
+      <section class="highlighted-places">
+        <h2>Lieux à ne pas rater en Jamaïque 🇯🇲</h2>
+
+        <div class="cards-container">
+          <div class="card">
+            <img src="img/krka-8274679_640.jpg" alt="Dunn’s River Falls" />
+            <h2>Dunn’s River Falls – Ocho Rios</h2>
+            <p>
+              Une cascade spectaculaire où les visiteurs peuvent grimper les
+              rochers et se baigner dans des piscines naturelles.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="img/blue-lagoon.webp" alt="Blue Lagoon" />
+            <h2>Blue Lagoon – Port Antonio</h2>
+            <p>
+              Un lagon bleu-vert mythique, célèbre pour ses eaux cristallines
+              profondes et paisibles.
+            </p>
+          </div>
+
+          <div class="card">
+            <img
+              src="img/plage-tropicale-avec-la-mer-calme.jpg"
+              alt="Seven Mile Beach"
+            />
+            <h2>Seven Mile Beach – Negril</h2>
+            <p>
+              Une plage de sable blanc paradisiaque, parfaite pour le farniente,
+              la baignade ou le coucher de soleil.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="img/bob-marley-museum.webp" alt="Bob Marley Museum" />
+            <h2>Musée Bob Marley – Kingston</h2>
+            <p>
+              Ancienne maison du roi du reggae transformée en musée vibrant,
+              avec visites guidées et objets authentiques.
+            </p>
+          </div>
+          <div class="card">
+            <img src="img/ricks_cafe.webp" alt="Rick's Café" />
+            <h2>Rick's Café – Negril</h2>
+            <p>
+              Endroit emblématique pour admirer le coucher de soleil, sauter des
+              falaises et profiter de concerts live.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="img/island strains.webp"
+              alt="Island Strains Herb House"
+            />
+            <h2>Island Strains Herb House – Montego Bay</h2>
+            <p>
+              Un dispensaire légal de cannabis offrant des produits locaux, un
+              lounge avec vue sur la mer et une immersion dans la culture
+              jamaïcaine.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section planification -->
+      <section class="planning">
+        <h2>Planification d’un voyage en Jamaïque 🇯🇲</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Ville</th>
+              <th>Budget par jour (€)</th>
+              <th>Activités proposées</th>
+              <th>Restaurants recommandés</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kingston</td>
+              <td>100</td>
+              <td>Musée Bob Marley, marché de Coronation, Dub Club</td>
+              <td>Redbones Blues Café, Gloria’s Seafood</td>
+            </tr>
+            <tr>
+              <td>Montego Bay</td>
+              <td>120</td>
+              <td>Plage Doctor’s Cave, snorkeling, Hip Strip</td>
+              <td>Marguerite’s, The Pelican Grill</td>
+            </tr>
+            <tr>
+              <td>Negril</td>
+              <td>90</td>
+              <td>Seven Mile Beach, Rick’s Café (sauts de falaise), plongée</td>
+              <td>Pushcart Restaurant, Ivan's Bar & Restaurant</td>
+            </tr>
+            <tr>
+              <td>Ocho Rios</td>
+              <td>110</td>
+              <td>Dunn’s River Falls, Mystic Mountain, rafting</td>
+              <td>Miss T’s Kitchen, Spring Garden Seafood</td>
+            </tr>
+            <tr>
+              <td>Port Antonio</td>
+              <td>80</td>
+              <td>Blue Lagoon, Rio Grande, Reach Falls</td>
+              <td>Soldier Camp Bar & Grill, Wilkes Cuisine</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="ganja-culture">
+        <h2>🌿 La culture du cannabis en Jamaïque</h2>
+        <p>
+          Le cannabis, appelé localement <strong>ganja</strong>, fait partie
+          intégrante de la culture jamaïcaine, notamment dans le mouvement
+          <em>rastafari</em>. Utilisé de manière sacrée et spirituelle, il
+          symbolise la paix, la méditation et la connexion à la nature.
+        </p>
+      </section>
+      <h2>📍 Lieux où découvrir la ganja légalement</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Lieu</th>
+            <th>Ville</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Island Strains Herb House</td>
+            <td>Montego Bay</td>
+            <td>Dispensaire + Lounge</td>
+          </tr>
+          <tr>
+            <td>Kaya Herb House</td>
+            <td>Ocho Rios</td>
+            <td>Dispensaire + Resto</td>
+          </tr>
+          <tr>
+            <td>Apollon Medical</td>
+            <td>Kingston</td>
+            <td>Clinique + Cannabis thérapeutique</td>
+          </tr>
+        </tbody>
+      </table>
+      <blockquote class="ganja-quote">
+        <p>"When you smoke the herb, it reveals you to yourself."</p>
+        <footer>— Bob Marley</footer>
+      </blockquote>
+      <div class="info-box">
+        <h3>ℹ️ Infos légales</h3>
+        <p>
+          En Jamaïque, la possession de petites quantités de cannabis (moins de
+          56 g) est dépénalisée, mais son usage public reste interdit. Certains
+          dispensaires légaux permettent une consommation responsable avec
+          prescription.
+        </p>
+      </div>
+
+      <section class="reservation-form">
+        <h3>Réservez votre aventure 🌴</h3>
+        <form action="https://formspree.io/f/VOIR_CI-DESSOUS" method="POST">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="arrival">Date d’arrivée :</label>
+          <input type="date" id="arrival" name="arrival" required />
+
+          <label for="city">Ville souhaitée :</label>
+          <select id="city" name="city" required>
+            <option value="">-- Choisissez une ville --</option>
+            <option value="Kingston">Kingston</option>
+            <option value="Montego Bay">Montego Bay</option>
+            <option value="Negril">Negril</option>
+            <option value="Ocho Rios">Ocho Rios</option>
+            <option value="Port Antonio">Port Antonio</option>
+          </select>
+
+          <label for="message">Message :</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Une demande particulière ?"
+          ></textarea>
+
+          <button type="submit">Envoyer ma réservation ✈️</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Omar | Tous droits réservés</p>
+    </footer>
+  </body>
+</html>
