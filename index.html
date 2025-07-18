@@ -12,37 +12,36 @@
 
 <body>
 
-
   <!-- Navbar -->
-  <nav class="navbar navbar-bg" role="navigation" aria-label="main navigation">
-    <div class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="index.html">
-          Accueil
-        </a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-item">Par Continent</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="#">Jamaïque <span class="has-text-link"> — Omar</span></a>
-            <a class="navbar-item" href="#">Japon <span class="has-text-link"> — Pierre</span></a>
-            <a class="navbar-item" href="#">Tunisie <span class="has-text-link"> — Mehdi</span></a>
-            <a class="navbar-item" href="russie.html">Russie <span class="has-text-link"> — Harouna</span></a>
-          </div>
-        </div>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-item">Par Personnes</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="">Omar <span class="has-text-success"> — Jamaïque</span></a>
-            <a class="navbar-item" href="">Pierre <span class="has-text-success"> — Japon</span></a>
-            <a class="navbar-item" href="">Mehdi <span class="has-text-success"> — Tunisie</span></a>
-            <a class="navbar-item" href="">Harouna <span class="has-text-success"> — Russie</span></a>
-          </div>
-        </div>
-
-      </div>
+  <nav>
+    <div class="conteneur-nav">
+      <label for="mobile">Afficher / Cacher le menu</label>
+      <input type="checkbox" id="mobile" role="button" />
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li class="deroulant">
+          <a href="">Par Continent</a>
+          <ul class="sous">
+            <li><a href="#">Afrique - Tunisie</a></li>
+            <li><a href="">Amérique du Nord - Jamaïque</a></li>
+            <li><a href="">Asie - Japon</a></li>
+            <li><a href="russie.html">Europe - Russie</a></li>
+          </ul>
+        </li>
+        <li class="deroulant">
+          <a href="#">Par personne</a>
+          <ul class="sous">
+            <li><a href="russie.html">Harouna - Russie</a></li>
+            <li><a href="">Mehdi - Tunisie</a></li>
+            <li><a href="">Omar - Jamaïque</a></li>
+            <li><a href="">Pierre - Japon</a></li>
+          </ul>
+        </li>
+        <li><a href="apropos.html">A propos</a></li>
+      </ul>
     </div>
   </nav>
+
 
   <!--hero-->
   <section class="hero is-medium is-link hero-img">
@@ -254,9 +253,5 @@
       </div>
     </div>
   </footer>
-
-
-
-
-</html>
+  < </html>
 </body>

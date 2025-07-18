@@ -1,4 +1,4 @@
-.navbar-bg{
+.navbar-bg {
     background-color: #4A5CD3;
 }
 
@@ -10,82 +10,229 @@
 }
 
 
-.p  {
+.p {
     color: white;
 }
 
+.conteneur-nav ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
 .custom-size {
-  max-width: 300px;
-  margin: 0 auto;
+    max-width: 300px;
+    margin: 0 auto;
 }
+
 .custom-size img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 
 .custom-card {
-  margin: 0 10px; 
+    margin: 0 10px;
 }
 
 .custom-img-row {
-  margin-top: 20px;
-  margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
 .card {
-  animation: fadeInUp 1s ease forwards;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 
 
 .icons .fa-facebook {
-  color: #3b5998; 
+    color: #3b5998;
 }
 
 .icons .fa-instagram {
-  color: #e1306c; 
+    color: #e1306c;
 }
 
 .icons .fa-twitter {
-  color: #1da1f2; 
+    color: #1da1f2;
 }
 
 .icons .fa-envelope {
-  color: #ffffff; 
+    color: #ffffff;
 }
 
 
 .box {
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(74, 92, 211, 0.2);
-  background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(74, 92, 211, 0.2);
+    background-color: lightblue;
 }
 
 .message.is-info {
-  background-color: #dbe9ff;
-  color: #051132;
-  border-radius: 10px;
+    background-color: #dbe9ff;
+    color: #051132;
+    border-radius: 10px;
 }
 
+/*NavBar mobile*/
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+.conteneur-nav {
+    position: absolute;
+    width: 100%;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+nav label {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: gold;
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    background-color: #555;
+}
+
+nav input[type="checkbox"]:checked+ul {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav>div>ul>li>a {
+    color: white;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+
+.sous {
+    display: flex;
+    flex-flow: column wrap;
+    z-index: 1000;
+}
+
+.sous li {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    background-color: RGBa(200, 200, 200, 0.8);
+}
+
+
+
+@media (min-width : 601px) {
+
+    /*NavBar DeskTop*/
+    .conteneur-nav {
+        position: static;
+    }
+
+    nav label,
+    nav input {
+        display: none;
+    }
+
+    nav input[type="checkbox"]:checked+ul,
+    nav ul {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #86BBD8;
+    }
+
+    nav ul li {
+        position: relative;
+    }
+
+    nav>div>ul>li>a {
+        color: black;
+    }
+
+    nav a {
+        border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+        color: rgb(23, 220, 214);
+        border-bottom: 2px solid rgb(223, 222, 217);
+    }
+
+    .sous {
+        display: none;
+        box-shadow: 0px 1px 2px #ccc;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+    }
+
+    nav>div>ul li:hover .sous {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .sous a {
+        border-bottom: none;
+        background-color: #86BBD8;
+    }
+
+    .sous a:hover {
+        border-bottom: none;
+        background-color: RGBa(200, 200, 200, 0.1);
+    }
+
+    .deroulant>a::after {
+        content: " ▼";
+        font-size: 12px;
+    }
+
+    .conteneur-contenu {
+        margin: 50px 20px;
+        height: 1500px;
+    }
+}

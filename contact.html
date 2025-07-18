@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Voyages</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="conteneur-nav">
+            <label for="mobile">Afficher / Cacher le menu</label>
+            <input type="checkbox" id="mobile" role="button" />
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="deroulant">
+                    <a href="">Par Continent</a>
+                    <ul class="sous">
+                        <li><a href="#">Afrique - Tunisie</a></li>
+                        <li><a href="">Amérique du Nord - Jamaïque</a></li>
+                        <li><a href="">Asie - Japon</a></li>
+                        <li><a href="russie.html">Europe - Russie</a></li>
+                    </ul>
+                </li>
+                <li class="deroulant">
+                    <a href="#">Par personne</a>
+                    <ul class="sous">
+                        <li><a href="russie.html">Harouna - Russie</a></li>
+                        <li><a href="">Mehdi - Tunisie</a></li>
+                        <li><a href="">Omar - Jamaïque</a></li>
+                        <li><a href="">Pierre - Japon</a></li>
+                    </ul>
+                </li>
+                <li><a href="apropos.html">A propos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--fin-->
+
+    <!--hero-->
+    <section class="hero is-medium  is-success has-text-centered">
+        <div class="hero-body">
+            <h1 class="title is-1">Contact</h1>
+        </div>
+    </section>
+    <!--fin-->
+
+    <!-- Formulaire -->
+    <section class="section">
+        <div class="container">
+            <form class="box">
+                <div class="field">
+                    <label class="label"></label>
+                    <div class="control animate__animated animate__bounceInDown">
+                        <input class="input" type="text" placeholder="Nom" required />
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label"></label>
+                    <div class="control animate__animated animate__bounceInDown">
+                        <input class="input" type="text" placeholder="Prénom" required />
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label"></label>
+                    <div class="control animate__animated animate__bounceInDown">
+                        <input class="input" type="text" placeholder="Téléphone" required />
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label"></label>
+                    <div class="control animate__animated animate__bounceInDown">
+                        <input class="input" type="email" placeholder="Email@domaine.com" required />
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label animate__animated animate__bounceInDown">Message</label>
+                    <div class="control animate__animated animate__bounceInDown">
+                        <textarea class="textarea" placeholder="Votre message ici..." required></textarea>
+                    </div>
+                </div>
+
+                <div class="field is-grouped is-justify-content-center">
+                    <div class="control animate__animated animate__bounceInDown">
+                        <button type="submit" class="button is-primary">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--fin-->
+
+
+    <!-- Footer -->
+    <footer class="footer has-background-dark has-text-white mt-6">
+        <div class="content has-text-centered">
+            <p>
+                <strong class="has-text-white">Voyages</strong> — Site réalisé par Harouna, Omar, Pierre & Mehdi.<br>
+                2025 - Tous droits réservés.
+            </p>
+            <div class="icons mt-3">
+                <a href="https://facebook.com" class="icon is-medium has-text-white mx-2" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com" class="icon is-medium has-text-white mx-2" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" class="icon is-medium has-text-white mx-2" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="contact.html" class="icon is-medium has-text-white mx-2">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!--fin-->
+
+
+</html>
+</body>
