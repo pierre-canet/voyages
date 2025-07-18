@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sidi Bou Saïd - Tunisie</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 20px 30px 40px;
+        background: #fafafa;
+        color: #222;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: hidden;
+      }
+      header {
+        text-align: center;
+        margin: 40px 0 30px;
+        animation: fadeInDown 1s ease forwards;
+        opacity: 0;
+        position: relative;
+      }
+      header h1 {
+        font-size: 3rem;
+        color: #007acc;
+        margin: 0;
+      }
+      header a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-weight: bold;
+        color: #007acc;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 10px;
+        transition: color 0.3s ease;
+      }
+      header a:hover {
+        color: #005b99;
+      }
+      section {
+        background: white;
+        padding: 25px 30px;
+        border-radius: 14px;
+        box-shadow: 0 10px 25px rgb(0 0 0 / 0.1);
+        animation: fadeInUp 1s ease 0.5s forwards;
+        opacity: 0;
+      }
+      p {
+        line-height: 1.6;
+        font-size: 1.15rem;
+        margin-bottom: 20px;
+      }
+      h2 {
+        margin-top: 40px;
+        margin-bottom: 15px;
+        color: #005b99;
+        border-bottom: 2px solid #007acc;
+        padding-bottom: 6px;
+      }
+      ul.activities {
+        list-style-type: square;
+        padding-left: 20px;
+        font-size: 1.1rem;
+        color: #444;
+        animation: slideInLeft 0.8s ease 1.2s forwards;
+        opacity: 0;
+      }
+      ul.activities li {
+        margin-bottom: 12px;
+      }
+      .gallery {
+        display: flex;
+        gap: 15px;
+        margin-top: 30px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        animation: slideInRight 0.8s ease 1.5s forwards;
+        opacity: 0;
+      }
+      .gallery img {
+        height: 160px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 10px rgb(0 0 0 / 0.15);
+      }
+      .gallery img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 20px rgb(0 0 0 / 0.3);
+      }
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInRight {
+        from {
+          opacity: 0;
+          transform: translateX(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sidi Bou Saïd</h1>
+      <a href="index.html">← Accueil</a>
+    </header>
+
+    <section>
+      <p>
+        Village pittoresque célèbre pour ses maisons blanches et bleues avec une
+        vue splendide sur la mer Méditerranée.
+      </p>
+
+      <h2>Histoire</h2>
+      <p>
+        Sidi Bou Saïd tire son nom d’un saint musulman du XIIIe siècle, Abou
+        Saïd el-Beji. Le village est devenu célèbre au XVIIIe siècle pour son
+        architecture andalouse, caractérisée par les couleurs bleu et blanc, qui
+        attirent artistes et touristes du monde entier.
+      </p>
+
+      <h2>Activités à faire</h2>
+      <ul class="activities">
+        <li>Flâner dans les ruelles colorées</li>
+        <li>Visiter la Maison des Arts</li>
+        <li>Profiter des cafés avec vue sur la mer</li>
+        <li>Explorer les boutiques d’artisanat local</li>
+      </ul>
+
+      <div class="gallery">
+        <img src="img tunisie/si" alt="Vue sur Sidi Bou Saïd" />
+        <img src="images/sidi2.jpg" alt="Ruelles à Sidi Bou Saïd" />
+        <img src="images/sidi3.jpg" alt="Café traditionnel à Sidi Bou Saïd" />
+      </div>
+    </section>
+  </body>
+</html>

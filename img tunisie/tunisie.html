@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Voyage en Tunisie</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 40px 20px 60px;
+        background: #f0f8ff;
+        color: #222;
+        text-align: center;
+      }
+      h1 {
+        color: #007acc;
+        font-size: 3rem;
+        margin-bottom: 40px;
+        animation: fadeInDown 1s ease forwards;
+        opacity: 0;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+        max-width: 1100px;
+        margin: 0 auto;
+        animation: fadeInUp 1s ease 0.5s forwards;
+        opacity: 0;
+      }
+      .gallery a {
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 14px;
+        box-shadow: 0 6px 15px rgb(0 0 0 / 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+      }
+      .gallery a:hover {
+        transform: scale(1.1);
+        box-shadow: 0 10px 30px rgb(0 0 0 / 0.3);
+      }
+      .gallery img {
+        display: block;
+        height: 160px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 14px;
+        pointer-events: none; /* Pour que le clic soit bien sur le lien <a> */
+      }
+      .caption {
+        margin-top: 12px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #005b99;
+      }
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Voyage en Tunisie</h1>
+
+    <div class="gallery">
+      <a href="sidi.html" title="Sidi Bou Saïd">
+        <img src="img tunisie/Sidi-Bou-Said.jpg" alt="Sidi Bou Saïd" />
+        <div class="caption">Sidi Bou Saïd</div>
+      </a>
+      <a href="eljem.html" title="El Jem">
+        <img src="img tunisie/eljem01.jpg" alt="El Jem" />
+        <div class="caption">El Jem</div>
+      </a>
+      <a href="sahara.html" title="Sahara tunisien">
+        <img src="img tunisie/sahara.jpg" alt="Sahara tunisien" />
+        <div class="caption">Sahara tunisien</div>
+      </a>
+      <a href="kairouan.html" title="Kairouan">
+        <img src="img tunisie/Kairouan5.jpg" alt="Kairouan" />
+        <div class="caption">Kairouan</div>
+      </a>
+      <a href="matmata.html" title="Matmata">
+        <img src="img tunisie/matmat.jpg" alt="Matmata" />
+        <div class="caption">Matmata</div>
+      </a>
+      <a href="djerba.html" title="Djerba">
+        <img src="img tunisie/djerba.jpg" alt="Djerba" />
+        <div class="caption">Djerba</div>
+      </a>
+    </div>
+  </body>
+</html>
